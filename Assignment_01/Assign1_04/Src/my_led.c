@@ -1,0 +1,71 @@
+/*
+ * my_led.c
+ *
+ *  Created on: 16-Sept-2026
+ *      Author: rushikesh
+ */
+#include"my_led.h"
+void init_led()
+{
+	// Led initalisation
+		// Enable clock for GPIOD
+		RCC->AHB1ENR |= BV(3);
+
+		//SET GPIO D12,D13,D14,D15 as output
+		GPIOD->MODER |= ( BV(24) | BV(26) | BV(28) | BV(30)     );
+		GPIOD->MODER &= ~( BV(25) | BV(27) | BV(29) | BV(31)  );
+
+		GPIOD->OTYPER &= ~( BV(12) | BV(13) | BV(14) |BV(15));//open drain-1 and no push-pull-0
+
+		GPIOD->OSPEEDR &= ~( BV(24) |  BV(25) | BV(26) | BV (27) | BV(28) | BV(29) | BV(30) | BV(31));
+
+	GPIOD->PUPDR &= ~( BV(24) |  BV(25) | BV(26) | BV (27) | BV(28) | BV(29) | BV(30) | BV(31));
+
+}
+
+void Led_Toggle_Opposite()
+{
+	GPIOD->ODR |= ( BV(12)  | BV(14) );
+	DelayMs(1000);
+	GPIOD->ODR &= ~( BV(12)| BV(14));
+	DelayMs(1000);
+
+	GPIOD->ODR |= ( BV(13)  | BV(15) );
+	DelayMs(1000);
+	GPIOD->ODR &= ~( BV(13)| BV(15));
+	DelayMs(1000);
+
+
+}
+
+void Led_On_Off_Rev()
+{
+	    GPIOD->ODR |= ( BV(12)  );
+		DelayMs(500);
+
+		GPIOD->ODR |= ( BV(13)  );
+		DelayMs(500);
+
+		GPIOD->ODR |= ( BV(14) );
+		DelayMs(500);
+
+		GPIOD->ODR |= ( BV(15) );
+		DelayMs(500);
+
+		GPIOD->ODR &=~( BV(15) );
+		DelayMs(500);
+
+		GPIOD->ODR &=~( BV(14) );
+		DelayMs(500);
+
+		GPIOD->ODR &=~( BV(13) );
+		DelayMs(500);
+
+		GPIOD->ODR &=~( BV(12) );
+		DelayMs(500);
+
+
+
+}
+
+

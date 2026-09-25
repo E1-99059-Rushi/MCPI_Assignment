@@ -1,0 +1,4 @@
+../Inc/system_stm32f4xx.h:128:20:DelayMs	2
+../Src/my_led.c:8:6:init_led	1
+../Src/my_led.c:26:6:Led_Toggle_Opposite	1
+../Src/my_led.c:41:6:Led_On_Off_Rev	1

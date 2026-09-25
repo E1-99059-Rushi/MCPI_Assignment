@@ -1,0 +1,4 @@
+../Inc/system_stm32f4xx.h:128:20:DelayMs	2
+../Src/main.c:30:6:Ledon	1
+../Src/main.c:46:6:Ledoff	1
+../Src/main.c:62:5:main	1
