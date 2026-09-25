@@ -3,3 +3,4 @@
 
 2026-09-25 10:24:46,767 [INFO] Activator:178 - !SESSION log4j initialized
 2026-09-25 10:24:48,072 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-09-25 13:44:28,139 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SWT SessionManagerDBus: Failed to UnregisterClient: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
