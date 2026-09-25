@@ -1,0 +1,19 @@
+18:12:44 **** Incremental Build of configuration Debug for project Assign2_01 ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/my_Led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_Led.d" -MT"Src/my_Led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_Led.o"
+arm-none-eabi-gcc "../Src/my_Switch.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/my_Switch.d" -MT"Src/my_Switch.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/my_Switch.o"
+arm-none-eabi-gcc -o "Assign2_01.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/rushikesh/C-DAC/Assignment/MCPI_Assignment/Assignment_02/Assign2_01/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Assign2_01.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Assign2_01.elf
+ 
+arm-none-eabi-size  Assign2_01.elf 
+arm-none-eabi-objdump -h -S Assign2_01.elf  > "Assign2_01.list"
+   text	   data	    bss	    dec	    hex	filename
+   1144	      0	   1568	   2712	    a98	Assign2_01.elf
+Finished building: default.size.stdout
+ 
+Finished building: Assign2_01.list
+ 
+
+18:12:44 Build Finished. 0 errors, 0 warnings. (took 170ms)
+

@@ -1,0 +1,15 @@
+!SESSION 2026-09-25 15:37:20.606 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-09-25 15:37:36.930
+!MESSAGE Log4j2 initialized with config file /home/rushikesh/C-DAC/Assignment/MCPI_Assignment/Assignment_02/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-09-25 15:37:38.738
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-09-25 15:38:21.006
+!MESSAGE Indexed 'Assign2_01' (3 sources, 53 headers) in 0.547 sec: 1,954 declarations; 2,867 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)

@@ -1,0 +1,41 @@
+/*
+ * my_Switch.c
+ *
+ *  Created on: 25-Sept-2026
+ *      Author: rushikesh
+ */
+
+
+void init_switch()
+{
+    // Enable GPIOA clock
+    RCC->AHB1ENR |= BV(0);
+
+    // PA0 as input
+    GPIOA->MODER &= ~(BV(0) | BV(1));
+
+    // No pull-up / pull-down
+    GPIOA->PUPDR &= ~(BV(0) | BV(1));
+
+
+    // Enable SYSCFG clock
+    RCC->APB2ENR |= BV(14);
+
+    // PA0 connected to EXTI0
+    SYSCFG->EXTICR[0] &= ~(BV(0) |
+                            BV(1) |
+                            BV(2) |
+                            BV(3));
+
+    // Enable EXTI0 interrupt
+    EXTI->IMR |= BV(0);
+
+    // Falling edge trigger
+    EXTI->FTSR |= BV(0);
+
+    // Disable rising edge trigger
+    EXTI->RTSR &= ~BV(0);
+
+    // Enable EXTI0 interrupt in NVIC
+    NVIC_EnableIRQ(EXTI0_IRQn);
+}

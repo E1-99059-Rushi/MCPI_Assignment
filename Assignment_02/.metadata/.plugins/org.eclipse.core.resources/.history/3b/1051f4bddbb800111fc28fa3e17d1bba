@@ -1,0 +1,18 @@
+/*
+ * my_Led.h
+ *
+ *  Created on: 25-Sept-2026
+ *      Author: rushikesh
+ */
+
+#ifndef MY_LED_H_
+#define MY_LED_H_
+#include<stm32f4xx.h>
+#include<stm32f407xx.h>
+void init_switch();
+void init_led();
+void led_on_pin();
+void led_off_pin();
+void switch_press();
+int check_switch_press();
+#endif /* MY_LED_H_ */

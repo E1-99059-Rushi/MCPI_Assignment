@@ -1,0 +1,33 @@
+/*
+ * my_Led.c
+ *
+ *  Created on: 25-Sept-2026
+ *      Author: rushikesh
+ */
+
+#ifndef MY_LED_C_
+#define MY_LED_C_
+#include "my_Led.h"
+
+void init_led()
+{
+
+	RCC->AHB1ENR |= BV(3);
+
+	GPIOD->MODER |= (BV(24) | BV(26) | BV(28) | BV(30));
+	GPIOD->MODER &= ~ (BV(25) |BV(27) | BV(29) | BV(31));
+
+	GPIOD->OTYPER &= ~( BV(12) | BV(13) | BV(14) | BV(15));
+
+	GPIOD->OSPEEDR &= ~( BV(24) | BV(25) | BV(26) | BV(27) | BV(28) | BV(29) | BV(30) | BV(31));
+
+	GPIOD->PUPDR &= ~ (BV(24) | BV(25) | BV(26) | BV(27) | BV(28) | BV(29) | BV(30) | BV(31));
+
+	GPIOD->ODR |= (BV(12 ) | BV(13) | BV(14) | BV(15));
+
+}
+
+
+
+
+#endif /* MY_LED_C_ */
