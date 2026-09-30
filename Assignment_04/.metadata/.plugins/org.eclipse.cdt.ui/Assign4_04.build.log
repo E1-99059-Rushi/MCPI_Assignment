@@ -1,0 +1,10 @@
+18:52:26 **** Incremental Build of configuration Debug for project Assign4_04 ****
+make -j12 all 
+arm-none-eabi-size  Assign4_04.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9460	     12	   1644	  11116	   2b6c	Assign4_04.elf
+Finished building: default.size.stdout
+ 
+
+18:52:26 Build Finished. 0 errors, 0 warnings. (took 68ms)
+

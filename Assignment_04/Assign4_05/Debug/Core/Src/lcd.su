@@ -1,0 +1,7 @@
+../Core/Src/lcd.c:10:6:PCF8574_write	24	static
+../Core/Src/lcd.c:16:9:PCF8574_read	24	static
+../Core/Src/lcd.c:23:6:init	8	static
+../Core/Src/lcd.c:44:6:write_nibble	24	static
+../Core/Src/lcd.c:55:6:write_byte	24	static
+../Core/Src/lcd.c:63:6:lcd_puts	24	static
+../Core/Src/lcd.c:70:6:shift_display	8	static

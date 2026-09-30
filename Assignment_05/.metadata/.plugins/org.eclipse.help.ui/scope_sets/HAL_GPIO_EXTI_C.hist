@@ -1,0 +1,4 @@
+#Wed Sep 30 15:25:42 IST 2026
+__DEFAULT__=false
+expression=HAL_GPIO_EXTI_C
+org.eclipse.help.ui.localSearch.master=true

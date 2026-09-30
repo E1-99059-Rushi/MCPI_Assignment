@@ -1,0 +1,17 @@
+19:01:36 **** Incremental Build of configuration Debug for project Assign04_02 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd.d" -MT"Core/Src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd.o"
+arm-none-eabi-gcc -o "Assign04_02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/rushikesh/C-DAC/Assignment/MCPI_Assignment/Assignment_04/Assign04_02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Assign04_02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Assign04_02.elf
+ 
+arm-none-eabi-size  Assign04_02.elf 
+arm-none-eabi-objdump -h -S Assign04_02.elf  > "Assign04_02.list"
+   text	   data	    bss	    dec	    hex	filename
+  13488	     92	   2092	  15672	   3d38	Assign04_02.elf
+Finished building: default.size.stdout
+ 
+Finished building: Assign04_02.list
+ 
+
+19:01:36 Build Finished. 0 errors, 0 warnings. (took 220ms)
+

@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_01,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_01_interrupt,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_03 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_04 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_05 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign04_02 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_06 Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign04_02\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign04_02\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_01/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Assign4_01/activeLaunchTarget=null\:---
