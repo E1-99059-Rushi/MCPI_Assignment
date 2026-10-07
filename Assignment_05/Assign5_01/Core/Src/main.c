@@ -127,7 +127,7 @@ int main(void)
 	  HAL_ADC_Stop(&hadc1);
 	  HAL_Delay(2000);
 
-	  //switch_press = 0;
+
 	  }
     /* USER CODE END WHILE */
 
